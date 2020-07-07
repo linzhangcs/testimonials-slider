@@ -20,6 +20,6 @@ Your users should be able to:
 ## Lin's goal for doing this challenge
 
 - Practice mobile first development
-- Attention to design detail - develop the final slider as close to the design image as possible
+- Pay Attention to design detail - develop the final slider as close to the design image as possible
 - Practice using CSS Flexbox
 - **Have fun building!** 🚀
