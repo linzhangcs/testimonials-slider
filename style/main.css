@@ -51,14 +51,69 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .slider .slider-image .image {
   width: 257px;
   height: 255px;
   margin-top: 8%;
-  border-radius: 10px;
+  border-radius: 12px;
   background-image: url("../images/image-tanya.jpg");
   background-size: cover;
+}
+
+.slider .slider-image .slider-controller {
+  width: 80px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 0px;
+  left: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider .slider-image .slider-controller .arrow {
+  width: 12px;
+  height: 12px;
+  background-size: 72%;
+}
+
+.slider .slider-image .slider-controller .left-arrow {
+  background-image: url("../images/icon-prev.svg");
+  background-repeat: no-repeat;
+  background-position-x: left;
+}
+
+.slider .slider-image .slider-controller .right-arrow {
+  background-image: url("../images/icon-next.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.slider .slider-text {
+  width: 80%;
+  margin-top: 30px;
+  background-image: url("../images/pattern-quotes.svg");
+  background-size: 20%;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.slider .slider-text .testimonial-text {
+  margin-top: 25px;
+  letter-spacing: 0.5px;
 }
 /*# sourceMappingURL=main.css.map */
