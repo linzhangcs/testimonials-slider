@@ -17,6 +17,12 @@ body {
   background-repeat: no-repeat;
 }
 
+@media (min-width: 1024px) {
+  .main-container {
+    background-size: 55%;
+  }
+}
+
 .slider {
   width: 100%;
   height: 100%;
@@ -38,6 +44,22 @@ body {
   margin-top: 20px;
 }
 
+@media (min-width: 1024px) {
+  .slider {
+    width: 90%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .slider .slider-image {
   width: 100%;
   height: 300px;
@@ -51,7 +73,24 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .slider .slider-image {
+    background-size: 40%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slider .slider-image {
+    width: 100%;
+    height: 1000px;
+    background-size: 100%;
+  }
 }
 
 .slider .slider-image .image {
@@ -61,6 +100,19 @@ body {
   border-radius: 12px;
   background-image: url("../images/image-tanya.jpg");
   background-size: cover;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .slider .slider-image .image {
+    margin-top: 4.3%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slider .slider-image .image {
+    width: 540px;
+    height: 540px;
+  }
 }
 
 .slider .slider-image .image-shadow {
@@ -73,13 +125,19 @@ body {
   z-index: -1;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .slider .slider-image .image-shadow {
+    margin-top: 4.3%;
+  }
+}
+
 .slider .slider-image .slider-controller {
   width: 80px;
-  height: 40px;
+  height: 38px;
   background-color: #fff;
   border-radius: 30px;
   position: absolute;
-  bottom: 0px;
+  bottom: -4px;
   left: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -107,12 +165,14 @@ body {
   background-image: url("../images/icon-prev.svg");
   background-repeat: no-repeat;
   background-position-x: left;
+  margin-left: 5px;
 }
 
 .slider .slider-image .slider-controller .right-arrow {
   background-image: url("../images/icon-next.svg");
   background-repeat: no-repeat;
   background-position-x: right;
+  margin-right: 5px;
 }
 
 .slider .slider-text {
