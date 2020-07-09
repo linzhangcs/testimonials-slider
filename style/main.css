@@ -4,7 +4,7 @@ body {
   width: 100%;
   font-family: "Inter", sans-serif;
   color: #202046;
-  font-weight: 300;
+  font-weight: 200;
   text-align: center;
 }
 
@@ -63,6 +63,16 @@ body {
   background-size: cover;
 }
 
+.slider .slider-image .image-shadow {
+  width: 200px;
+  height: 255px;
+  margin-top: 8%;
+  -webkit-box-shadow: -5px 10px 40px #bfbfd7;
+          box-shadow: -5px 10px 40px #bfbfd7;
+  position: absolute;
+  z-index: -1;
+}
+
 .slider .slider-image .slider-controller {
   width: 80px;
   height: 40px;
@@ -83,6 +93,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: -5px 10px 30px #bfbfd7;
+          box-shadow: -5px 10px 30px #bfbfd7;
 }
 
 .slider .slider-image .slider-controller .arrow {
@@ -105,7 +117,7 @@ body {
 
 .slider .slider-text {
   width: 80%;
-  margin-top: 30px;
+  margin-top: 35px;
   background-image: url("../images/pattern-quotes.svg");
   background-size: 20%;
   background-position: top center;
@@ -113,9 +125,10 @@ body {
 }
 
 .slider .slider-text .testimonial-text {
-  margin-top: 25px;
+  margin-top: 26px;
   margin-bottom: 20px;
   letter-spacing: 0.5px;
+  line-height: 140%;
 }
 
 .slider .slider-text .testimonial-name {
