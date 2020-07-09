@@ -1,0 +1,45 @@
+$text-dark-blue: hsl(240, 38%, 20%);
+$text-grayish-blue: hsl(240, 18%, 77%);
+
+$body-copy-size: 32px;
+$font-family: 'Inter', sans-serif;
+
+$desktop-viewport: 1440px;
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: $font-family;
+    color: $text-dark-blue;
+    font-weight: 300;
+    text-align: center;
+}
+
+.main-container{
+    position: fixed;
+    height: 100vh;
+
+    background-image: url('../images/pattern-curve.svg');
+    background-position: bottom 0px left 0px;
+    background-size: 85%;
+    background-repeat: no-repeat;
+}
+
+.slider{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .slider-image{
+        width: 80%;
+        height: 225px;
+        border-radius: 10px;
+        background-image: url("../images/image-tanya.jpg");
+        background-size: cover;
+    }
+}
