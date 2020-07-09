@@ -27,19 +27,32 @@ body{
 }
 
 .slider{
-    width: 80%;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
     font-size: 1em;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    margin-top: 20px;
+
     .slider-image{
-        width: 80%;
-        height: 225px;
-        border-radius: 10px;
-        background-image: url("../images/image-tanya.jpg");
-        background-size: cover;
+        width: 100%;
+        height: 300px;
+        background-image: url("../images/pattern-bg.svg");
+        background-size: 85%;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        .image{
+            width: 257px;
+            height: 255px;
+            margin-top: 8%;
+            border-radius: 10px;
+            background-image: url("../images/image-tanya.jpg");
+            background-size: cover;
+        }
     }
 }

@@ -18,7 +18,7 @@ body {
 }
 
 .slider {
-  width: 80%;
+  width: 100%;
   height: 100%;
   margin: 0 auto;
   font-size: 1em;
@@ -29,17 +29,34 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 20px;
 }
 
 .slider .slider-image {
-  width: 80%;
-  height: 225px;
+  width: 100%;
+  height: 300px;
+  background-image: url("../images/pattern-bg.svg");
+  background-size: 85%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider .slider-image .image {
+  width: 257px;
+  height: 255px;
+  margin-top: 8%;
   border-radius: 10px;
   background-image: url("../images/image-tanya.jpg");
   background-size: cover;
