@@ -114,6 +114,16 @@ body {
 
 .slider .slider-text .testimonial-text {
   margin-top: 25px;
+  margin-bottom: 20px;
   letter-spacing: 0.5px;
+}
+
+.slider .slider-text .testimonial-name {
+  font-weight: 700;
+}
+
+.slider .slider-text .testimonial-title {
+  font-weight: 500;
+  color: #babacf;
 }
 /*# sourceMappingURL=main.css.map */

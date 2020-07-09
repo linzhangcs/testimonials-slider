@@ -100,7 +100,15 @@ body{
 
         .testimonial-text{
             margin-top: 25px;
+            margin-bottom: 20px;
             letter-spacing: 0.5px;
+        }
+        .testimonial-name{
+            font-weight: 700;
+        }
+        .testimonial-title{
+            font-weight: 500;
+            color: $text-grayish-blue;
         }
     }
 }
