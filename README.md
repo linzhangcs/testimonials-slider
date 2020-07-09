@@ -22,4 +22,5 @@ Your users should be able to:
 - Practice mobile first development
 - Pay Attention to design detail - develop the final slider as close to the design image as possible
 - Practice using CSS Flexbox
+- Keep track of time spent on the project 
 - **Have fun building!** 🚀
