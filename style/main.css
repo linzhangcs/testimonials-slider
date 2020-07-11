@@ -53,6 +53,7 @@ body {
 @media (min-width: 1024px) {
   .slider {
     width: 90%;
+    margin-top: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
@@ -67,6 +68,7 @@ body {
 }
 
 .slider .slider-image {
+  width: 100%;
   height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,7 +81,7 @@ body {
           align-items: center;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 376px) and (max-width: 1023px) {
   .slider .slider-image {
     background-size: 40%;
   }
@@ -87,42 +89,60 @@ body {
 
 @media (min-width: 1024px) {
   .slider .slider-image {
-    width: 100%;
     height: 1000px;
     background-size: 100%;
   }
 }
 
 .slider .slider-image .image-bg {
-  width: 700px;
-  height: 700px;
+  width: 100%;
+  height: 100%;
+  background-size: 88%;
   position: relative;
   background-image: url("../images/pattern-bg.svg");
-  background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 376px) and (max-width: 1023px) {
+  .slider .slider-image .image-bg {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slider .slider-image .image-bg {
+    width: 700px;
+    height: 700px;
+    background-size: 100%;
+  }
 }
 
 .slider .slider-image .image {
-  width: 257px;
-  height: 255px;
-  margin-top: 8%;
+  width: 252px;
+  height: 252px;
+  margin-top: 3%;
   border-radius: 12px;
   background-image: url("../images/image-tanya.jpg");
   background-size: cover;
   position: relative;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  .slider .slider-image .image {
-    margin-top: 4.3%;
-  }
-}
-
 @media (min-width: 1024px) {
   .slider .slider-image .image {
     width: 540px;
     height: 540px;
+    margin-top: 9px;
   }
 }
 
@@ -130,7 +150,7 @@ body {
   width: 200px;
   height: 205px;
   position: absolute;
-  top: 50px;
+  top: 45px;
   left: 5%;
   -webkit-box-shadow: -5px 10px 40px #bfbfd7;
           box-shadow: -5px 10px 40px #bfbfd7;
@@ -152,7 +172,7 @@ body {
   border-radius: 30px;
   position: absolute;
   bottom: -4px;
-  left: 34%;
+  left: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,10 +189,27 @@ body {
           box-shadow: -5px 10px 30px #bfbfd7;
 }
 
+@media (min-width: 1024px) {
+  .slider .slider-image .slider-controller {
+    width: 118px;
+    height: 58px;
+    bottom: 7%;
+    left: 20%;
+  }
+}
+
 .slider .slider-image .slider-controller .arrow {
   width: 12px;
   height: 12px;
   background-size: 72%;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .slider .slider-image .slider-controller .arrow {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .slider .slider-image .slider-controller .left-arrow {
@@ -189,35 +226,29 @@ body {
   margin-right: 5px;
 }
 
-@media (min-width: 1024px) {
-  .slider .slider-image .slider-controller {
-    width: 110px;
-    bottom: 18%;
-    left: 27%;
-  }
-}
-
 .slider .slider-text {
-  width: 630px;
+  width: 85%;
   height: 50%;
+  margin: 0 auto;
   margin-top: 35px;
   background-image: url("../images/pattern-quotes.svg");
   background-size: 20%;
-  background-position: top right 10px;
+  background-position: top center;
   background-repeat: no-repeat;
   position: relative;
-  font-weight: 500;
+  text-align: center;
 }
 
 @media (min-width: 1024px) {
   .slider .slider-text {
-    background-size: 20%;
-    background-position: top 0px left 100px;
+    background-size: 16%;
+    background-position: top 0px left 210px;
+    font-weight: 300;
   }
 }
 
 .slider .slider-text .testimonial-text {
-  width: 630px;
+  width: 100%;
   margin-top: 26px;
   margin-bottom: 20px;
   letter-spacing: 0.5px;
@@ -226,12 +257,14 @@ body {
 
 @media (min-width: 1024px) {
   .slider .slider-text .testimonial-text {
-    font-size: 1.5em;
-    margin-top: 46px;
+    width: 650px;
+    margin-top: 40px;
     height: 100%;
     position: absolute;
-    left: 0;
+    left: 16%;
     top: 0;
+    font-size: 2em;
+    text-align: left;
   }
 }
 
@@ -243,8 +276,8 @@ body {
   .slider .slider-text .testimonial-name {
     display: inline-block;
     position: absolute;
-    left: 50%;
-    top: 440px;
+    left: 16%;
+    top: 300px;
   }
 }
 
