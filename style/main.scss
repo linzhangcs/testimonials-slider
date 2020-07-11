@@ -12,14 +12,17 @@ $desktop-viewport: 1440px;
 body{
     margin: 0;
     padding: 0;
-    width: 100%;
     font-family: $font-family;
     color: $text-dark-blue;
     font-weight: 200;
     text-align: center;
+    @include desktop{
+        text-align: left;
+    }
 }
 
 .main-container{
+    width: 100%;
     position: fixed;
     height: 100vh;
     background-image: url('../images/pattern-curve.svg');
@@ -48,16 +51,11 @@ body{
         align-items: center;
     }
     .slider-image{
-        width: 100%;
+        // width: 100%;
         height: 300px;
-        background-image: url("../images/pattern-bg.svg");
-        background-size: 85%;
-        background-position: center;
-        background-repeat: no-repeat;
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
 
         @include tablet{
             background-size: 40%;
@@ -67,6 +65,16 @@ body{
             height: 1000px;
             background-size:100%;
         }
+        .image-bg{
+            width: 700px;
+            height: 700px;
+            position: relative;
+            background-image: url("../images/pattern-bg.svg");
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+        }
         .image{
             width: 257px;
             height: 255px;
@@ -74,6 +82,7 @@ body{
             border-radius: 12px;
             background-image: url("../images/image-tanya.jpg");
             background-size: cover;
+            position: relative;
             @include tablet{
                 margin-top: 4.3%;
             }
@@ -84,14 +93,18 @@ body{
         }
         .image-shadow{
             width: 200px;
-            height: 255px;
-            margin-top: 8%;
+            height: 205px;
+            position: absolute;
+            top: 50px;
+            left: 5%;
             box-shadow: -5px 10px 40px $slider-image-shadow;
             position: absolute;
             z-index: -1;
-            @include tablet{
-                margin-top: 4.3%;
+            @include desktop{
+                width: 490px;
+                height: 490px;
             }
+
         }
         .slider-controller{
             width: 80px;
@@ -100,7 +113,7 @@ body{
             border-radius: 30px;
             position: absolute;
             bottom: -4px;
-            left: 40%;
+            left:34%;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
@@ -124,29 +137,66 @@ body{
                 background-position-x: right;
                 margin-right: 5px;
             }
+
+            @include desktop{
+                width: 110px;
+                bottom: 18%;
+                left: 27%;
+            }
         }
     }
 
     .slider-text{
-        width: 80%;
+        width: 630px;
+        height: 50%;
         margin-top: 35px;
         background-image: url("../images/pattern-quotes.svg");
         background-size: 20%;
-        background-position: top center;
+        background-position: top right 10px;
         background-repeat: no-repeat;
-
+        position: relative;
+        font-weight: 500;
+        @include desktop{
+            // position: absolute;
+            // left: 400px;
+            // margin-left: 140px;
+            // width: 60%;
+            background-size: 20%;
+            background-position: top 0px left 100px;
+        }
         .testimonial-text{
+            width: 630px;
             margin-top: 26px;
             margin-bottom: 20px;
             letter-spacing: 0.5px;
             line-height: 140%;
+            @include desktop{
+                font-size: 1.5em;
+                margin-top: 46px;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
         }
         .testimonial-name{
             font-weight: 700;
+            @include desktop{
+                display: inline-block;
+                // margin-top: 46px;
+                // width: 100%;
+                // height: 100%;
+                position: absolute;
+                left: 50%;
+                top: 440px;
+            }
         }
         .testimonial-title{
             font-weight: 500;
             color: $text-grayish-blue;
+            @include desktop{
+                display: inline-block;
+            }
         }
     }
 }

@@ -1,14 +1,20 @@
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
   font-family: "Inter", sans-serif;
   color: #202046;
   font-weight: 200;
   text-align: center;
 }
 
+@media (min-width: 1024px) {
+  body {
+    text-align: left;
+  }
+}
+
 .main-container {
+  width: 100%;
   position: fixed;
   height: 100vh;
   background-image: url("../images/pattern-curve.svg");
@@ -61,12 +67,7 @@ body {
 }
 
 .slider .slider-image {
-  width: 100%;
   height: 300px;
-  background-image: url("../images/pattern-bg.svg");
-  background-size: 85%;
-  background-position: center;
-  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,7 +77,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -93,6 +93,16 @@ body {
   }
 }
 
+.slider .slider-image .image-bg {
+  width: 700px;
+  height: 700px;
+  position: relative;
+  background-image: url("../images/pattern-bg.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .slider .slider-image .image {
   width: 257px;
   height: 255px;
@@ -100,6 +110,7 @@ body {
   border-radius: 12px;
   background-image: url("../images/image-tanya.jpg");
   background-size: cover;
+  position: relative;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -117,17 +128,20 @@ body {
 
 .slider .slider-image .image-shadow {
   width: 200px;
-  height: 255px;
-  margin-top: 8%;
+  height: 205px;
+  position: absolute;
+  top: 50px;
+  left: 5%;
   -webkit-box-shadow: -5px 10px 40px #bfbfd7;
           box-shadow: -5px 10px 40px #bfbfd7;
   position: absolute;
   z-index: -1;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 1024px) {
   .slider .slider-image .image-shadow {
-    margin-top: 4.3%;
+    width: 490px;
+    height: 490px;
   }
 }
 
@@ -138,7 +152,7 @@ body {
   border-radius: 30px;
   position: absolute;
   bottom: -4px;
-  left: 40%;
+  left: 34%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,28 +189,73 @@ body {
   margin-right: 5px;
 }
 
+@media (min-width: 1024px) {
+  .slider .slider-image .slider-controller {
+    width: 110px;
+    bottom: 18%;
+    left: 27%;
+  }
+}
+
 .slider .slider-text {
-  width: 80%;
+  width: 630px;
+  height: 50%;
   margin-top: 35px;
   background-image: url("../images/pattern-quotes.svg");
   background-size: 20%;
-  background-position: top center;
+  background-position: top right 10px;
   background-repeat: no-repeat;
+  position: relative;
+  font-weight: 500;
+}
+
+@media (min-width: 1024px) {
+  .slider .slider-text {
+    background-size: 20%;
+    background-position: top 0px left 100px;
+  }
 }
 
 .slider .slider-text .testimonial-text {
+  width: 630px;
   margin-top: 26px;
   margin-bottom: 20px;
   letter-spacing: 0.5px;
   line-height: 140%;
 }
 
+@media (min-width: 1024px) {
+  .slider .slider-text .testimonial-text {
+    font-size: 1.5em;
+    margin-top: 46px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
 .slider .slider-text .testimonial-name {
   font-weight: 700;
+}
+
+@media (min-width: 1024px) {
+  .slider .slider-text .testimonial-name {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 440px;
+  }
 }
 
 .slider .slider-text .testimonial-title {
   font-weight: 500;
   color: #babacf;
+}
+
+@media (min-width: 1024px) {
+  .slider .slider-text .testimonial-title {
+    display: inline-block;
+  }
 }
 /*# sourceMappingURL=main.css.map */
