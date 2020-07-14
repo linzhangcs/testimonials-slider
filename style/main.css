@@ -23,6 +23,12 @@ body {
   background-repeat: no-repeat;
 }
 
+@media (min-width: 376px) and (max-width: 1439px) {
+  .main-container {
+    background-size: 60%;
+  }
+}
+
 @media (min-width: 1440px) {
   .main-container {
     background-size: 44%;
@@ -255,7 +261,7 @@ body {
 }
 
 .slider .slider-text {
-  width: 85%;
+  width: 83%;
   height: 50%;
   margin: 0 auto;
   margin-top: 15px;
@@ -270,7 +276,6 @@ body {
 @media (min-width: 376px) and (max-width: 1439px) {
   .slider .slider-text {
     background-size: 12%;
-    font-weight: 300;
   }
 }
 

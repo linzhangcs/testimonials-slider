@@ -29,6 +29,9 @@ body{
     background-position: bottom 0px left 0px;
     background-size: 85%;
     background-repeat: no-repeat;
+    @include tablet{
+        background-size: 60%;
+    }
     @include desktop{
         background-size: 44%;
     }
@@ -187,7 +190,7 @@ body{
     }
 
     .slider-text{
-        width: 85%;
+        width: 83%;
         height: 50%;
         margin: 0 auto;
         margin-top: 15px;
@@ -200,7 +203,6 @@ body{
 
         @include tablet{
             background-size: 12%;
-            font-weight: 300;
         }
 
         @include desktop{
