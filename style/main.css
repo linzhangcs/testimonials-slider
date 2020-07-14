@@ -136,6 +136,8 @@ body {
   background-image: url("../images/image-tanya.jpg");
   background-size: cover;
   position: relative;
+  -webkit-transition: background-image 0.5s linear;
+  transition: background-image 0.5s linear;
 }
 
 @media (min-width: 376px) and (max-width: 1439px) {

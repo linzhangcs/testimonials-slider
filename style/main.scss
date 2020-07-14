@@ -98,6 +98,7 @@ body{
             background-image: url("../images/image-tanya.jpg");
             background-size: cover;
             position: relative;
+            transition: background-image 0.5s linear;
 
             @include tablet{
                 width: 320px;
