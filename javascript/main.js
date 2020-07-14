@@ -1,5 +1,5 @@
 (function(){
-    const SLIDEIMGS = ['https://github.com/linzhangcs/testimonials-slider/blob/master/images/image-tanya.jpg', 'https://github.com/linzhangcs/testimonials-slider/blob/master/images/image-john.jpg'];
+    const SLIDEIMGS = ['../images/image-tanya.jpg', '../images/image-john.jpg'];
     const SLIDETEXTS = [`“ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”`, 
     `“ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”`];
     const NAMES = ['Tanya Sinclair', 'John Tarkpor'];
@@ -23,7 +23,7 @@
     function showSlide(move){
         position = Math.abs(position + move)%LENGTH;
         switch(position){
-            case 1: 
+            case 1:                 
                 IMAGE.style.backgroundImage = `url(${SLIDEIMGS[1]})`;
                 QUOTE.innerText = SLIDETEXTS[1];
                 NAME.innerText = NAMES[1];
